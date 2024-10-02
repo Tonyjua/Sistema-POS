@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".view.ListaProductoVentaActivity">
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_id_categoria"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"></TextView>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_id_subcategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"></TextView>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_id_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <Button
+                android:onClick="volverpantalla"
+                android:layout_margin="5dp"
+                android:background="@drawable/animar_boton_flecha"
+                android:layout_width="80dp"
+                android:layout_height="80dp"></Button>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="120dp"
+                android:layout_gravity="left"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Lista de productos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/idRecyclerImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/txt_id_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"></TextView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

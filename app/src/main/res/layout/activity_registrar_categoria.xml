@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgrounesenfocado"
+    tools:context=".view.RegistrarCategoriaActivity">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:background="@drawable/fondoborde"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-30dp"
+                    android:gravity="center"
+                    android:text="Registro categoria"
+                    android:textSize="29sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/mascategoria" />
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/select_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/fondoborde"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txt_categoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/color_fondo"
+                        android:hint="Nombre categoria"
+                        android:inputType="textPersonName"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                >
+
+                <Button
+                    android:background="@drawable/animar_boton_registrar"
+                    android:onClick="registrar"
+                    android:id="@+id/btnregistrar"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:background="@drawable/animar_boton_volver"
+                    android:onClick="volverpantalla"
+                    android:id="@+id/btnsesion"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IpPOS</string>
+    <string name="error_ingrese_id">Ingrese un id</string>
+    <string name="error_ingrese_nombre">Ingrese un nombre</string>
+    <string name="error_ingrese_clave">Ingrese una clave</string>
+    <string name="error_ingrese_correo">Ingrese un correo</string>
+    <string name="error_ingrese_apellido">Ingrese un apellido</string>
+    <string name="error_ingrese_direccion">Ingrese una dirección</string>
+    <string name="error_ingrese_rut">Ingrese un rut</string>
+    <string name="error_ingrese_telefono">Ingrese un numero teléfono</string>
+    <string name="error_ingrese_detalle">Ingrese detalle del producto</string>
+    <string name="error_ingrese_precio">Ingrese precio del producto</string>
+    <string name="error_ingrese_stock">Ingrese stock del producto</string>
+    <string name="error_ingrese_cantidad">Ingrese cantidad del producto</string>
+</resources>

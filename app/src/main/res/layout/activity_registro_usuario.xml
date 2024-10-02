@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/backgrounesenfocado"
+    tools:context=".view.RegistroUsuarioActivity">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+        <TextView
+            android:textColor="@color/white"
+            android:background="@drawable/fondoborde"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30dp"
+            android:gravity="center"
+            android:text="Registro Usuario"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/select_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/masusuario" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/fondoborde"
+        >
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="320dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Comuna:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="375dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Empresa:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="435dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Tipo usuario:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/color_fondo"
+                android:hint="Nombre usuario"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/txt_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/color_fondo"
+                android:hint="Apellido usuario"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+            <EditText
+                android:id="@+id/txt_rut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/color_fondo"
+                android:hint="Rut usuario"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/txt_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/color_fondo"
+                android:hint="Correo usuario"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/txt_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/color_fondo"
+                android:hint="Teléfono usuario"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+            <EditText
+                android:id="@+id/txt_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/color_fondo"
+                android:hint="Dirección usuario"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+            <Spinner
+                android:id="@+id/spinner_comuna"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/color_fondo">
+
+            </Spinner>
+            <Spinner
+                android:id="@+id/spinner_empresa"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/color_fondo">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/btnSpinner"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/color_fondo">
+
+            </Spinner>
+            <EditText
+                android:id="@+id/txt_clave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/color_fondo"
+                android:hint="Clave usuario"
+                android:inputType="textPassword"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/txt_idComuna"
+            android:layout_marginLeft="190dp"
+            android:layout_marginRight="100dp"
+            android:textStyle="bold"
+            android:layout_marginTop="268dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:id="@+id/select_comuna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:id="@+id/select_empresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:id="@+id/txt_idEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        >
+
+        <Button
+            android:background="@drawable/animar_boton_registrar"
+            android:onClick="registrar"
+            android:id="@+id/btnregistrar"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:background="@drawable/animar_boton_volver"
+            android:onClick="volverpantalla"
+            android:id="@+id/btnsesion"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            />
+
+    </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

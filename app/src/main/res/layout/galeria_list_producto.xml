@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/rectangulodenegro"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="575dp"
+            >
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_margin="20dp"
+                android:id="@+id/id_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                />
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/txt_nombre_producto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/txt_detalle_producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Precio: $"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="115dp"
+                android:id="@+id/txt_precio_producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Stock: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            <TextView
+
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="95dp"
+                android:id="@+id/txt_stock_producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

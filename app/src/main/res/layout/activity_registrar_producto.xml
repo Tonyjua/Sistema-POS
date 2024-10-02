@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgrounesenfocado"
+    tools:context=".view.RegistrarProductoActivity">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:background="@drawable/fondoborde"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Registrar Producto"
+                    android:textSize="29sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/select_producto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/id_producto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/select_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                >
+            <FrameLayout
+                android:background="@drawable/rectangulodenegro"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_gravity="left"
+                >
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/id_foto"
+                    android:layout_width="195dp"
+                    android:layout_height="195dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    />
+            </FrameLayout>
+                <Button
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/animar_boton_foto"
+                    android:onClick="sacarFoto"
+                    android:id="@+id/btn_foto"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="right"
+                    />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/fondoborde"
+                >
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="220dp"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:text="Subcategoria:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txt_nombre_producto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/color_fondo"
+                        android:hint="Nombre producto"
+                        android:inputType="textPersonName"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/txt_detalle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/color_fondo"
+                        android:hint="Detalle"
+                        android:inputType="textPersonName"
+                        android:textSize="25sp" />
+                    <EditText
+                        android:id="@+id/txt_precio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/color_fondo"
+                        android:hint="Precio"
+                        android:inputType="number"
+                        android:textSize="25sp" />
+                    <EditText
+                        android:id="@+id/txt_stock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/color_fondo"
+                        android:hint="Stock"
+                        android:inputType="number"
+                        android:textSize="25sp" />
+                    <Spinner
+                        android:id="@+id/btnSpinner"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/color_fondo">
+
+                    </Spinner>
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                >
+
+                <Button
+                    android:background="@drawable/animar_boton_registrar"
+                    android:onClick="registrar"
+                    android:id="@+id/btnregistrar"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:background="@drawable/animar_boton_volver"
+                    android:onClick="volverpantalla"
+                    android:id="@+id/btnsesion"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

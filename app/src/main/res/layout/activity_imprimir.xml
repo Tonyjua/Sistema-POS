@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ImprimirActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/txt_id_folio"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"></TextView>
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/txt_id_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <FrameLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+                    <Button
+                        android:id="@+id/boton_volver"
+                        android:onClick="volverpantalla"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/animar_boton_flecha"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"></Button>
+                    <Button
+                        android:layout_margin="5dp"
+                        android:layout_gravity="right"
+                        android:id="@+id/btn_imprimir"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/animar_boton_imprimir"
+
+                        />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:visibility="invisible"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/txt_valor_UTM"
+                        android:layout_marginTop="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:visibility="invisible"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/txt_unidades"
+                        android:layout_marginTop="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:visibility="invisible"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/txt_precio_gasolina"
+                        android:layout_marginTop="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:visibility="invisible"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/txt_gasolina"
+                        android:layout_marginTop="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+
+                        android:visibility="invisible"
+                        android:id="@+id/txt_sucursales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/txt_comunaS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+
+
+                <TextView
+                    android:id="@+id/txt_razon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R.U.T.:"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_marginLeft="70dp"
+                        android:id="@+id/rut_empresa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        >
+
+                    </TextView>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:text="CIUDAD: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginLeft="60dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:id="@+id/txt_ciudad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:text="COMUNA: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:layout_marginLeft="70dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:id="@+id/txt_comuna"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:id="@+id/txt_direccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="---------------------------------------------------------------------------------------"
+                    >
+
+                </TextView>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BOLETA ELECTRONICA NRO.: "
+                        />
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="250dp"
+                        android:id="@+id/txt_folio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FECHA:"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="80dp"
+                        android:id="@+id/txt_fecha_boleta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HORA:"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="70dp"
+                        android:id="@+id/txt_fono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </FrameLayout>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----------------------------------------------------------------------------------------"
+                    >
+
+                </TextView>
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ARTICULO        P.UNITARIO        CANT.      TOTAL"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="_______________________________________________________"
+                    />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Producto"
+                        />
+                    <TextView
+                        android:id="@+id/valor_unitario"
+                        android:layout_marginLeft="90dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/txt_total"
+                        android:layout_marginLeft="260dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="200dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.0"
+                        />
+                </FrameLayout>
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="_______________________________________________________"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="14sp"
+                        android:text="El IVA de esta boleta es $"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txt_iva"
+                        android:layout_marginLeft="161dp"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total:"
+                        />
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_montoTotal"
+                        />
+                </FrameLayout>
+
+                <ImageView
+                    android:background="@drawable/codigoqr"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:id="@+id/img_boleta"
+                    android:layout_width="348dp"
+                    android:layout_height="181dp">
+                </ImageView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timbre Electrónico SII"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    >
+
+                </TextView>
+
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Documento generado por"
+                    />
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="www.appexpress.cl"/>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_empresa"
+
+                />
+
+
+
+            <TextView
+                android:layout_marginTop="100dp"
+                android:visibility="invisible"
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:visibility="invisible"
+                android:layout_marginTop="50dp"
+                android:id="@+id/nombrePDF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

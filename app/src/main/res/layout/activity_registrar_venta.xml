@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgrounesenfocado"
+    tools:context=".view.RegistrarVentaActivity">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/txt_resultado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"></TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/txt_fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"></TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/txt_multiplicado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"></TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/txt_id_categoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"></TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/txt_id_subcategoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"></TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/txt_id_producto"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/color_fondo"
+                    android:textSize="25sp" />
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/txt_id_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"></TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/txt_folio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"></TextView>
+
+       <Button
+           android:onClick="volver"
+           android:layout_margin="10dp"
+           android:background="@drawable/animar_boton_flecha"
+           android:layout_width="80dp"
+           android:layout_height="80dp"></Button>
+                <TextView
+                    android:layout_marginTop="-26dp"
+                    android:layout_gravity="center"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Ingrese cantidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <EditText
+                    android:id="@+id/txt_cantidad"
+                    android:background="@drawable/color_fondo"
+                    android:hint="Cantidad"
+                    android:inputType="number"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></EditText>
+                <Button
+                    android:onClick="registrar"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/animar_boton_carro"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"></Button>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/select_producto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/id_subcategoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/select_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </FrameLayout>
+
+                <FrameLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    >
+                    <LinearLayout
+                        android:background="@drawable/rectangulodenegro"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="575dp"
+                        >
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/id_foto"
+                        android:layout_width="match_parent"
+                        android:layout_height="380dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        />
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/txt_nombre_producto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="28sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/txt_detalle"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                          />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:text="Precio: $"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_marginRight="20dp"
+                                android:layout_marginLeft="115dp"
+                                android:id="@+id/txt_precio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:text="Stock: "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                            <TextView
+
+                                android:layout_marginRight="20dp"
+                                android:layout_marginLeft="95dp"
+                                android:id="@+id/txt_stock"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
